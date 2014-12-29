@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1375D8"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/alpha_name"
+        android:layout_width="wrap_content"
+    	android:layout_marginLeft="30dp"
+    	android:layout_gravity="center|left"
+    	android:text="dafsa"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:gravity="left"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="60dp"
+    android:layout_height="match_parent" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="30dp"
+	    android:orientation="horizontal"
+	    android:background="@drawable/btn_item_click" >
+	    <ImageView
+	        android:id="@+id/calllogs_item_type"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"/>
+	    <TextView
+	        android:id="@+id/calllogs_item_number"
+	        android:layout_width="0dp"
+	        android:layout_weight="4"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="20sp"
+	        android:text="15101145180"
+	        android:singleLine="true"
+	        android:gravity="center|left"/>
+	    
+		<TextView
+	        android:id="@+id/calllogs_item_time"
+	        android:layout_width="0dp"
+	        android:layout_weight="4"
+	        android:layout_height="match_parent"
+	        android:layout_marginRight="10dp"
+	        android:layout_gravity="center|right"
+	        android:textSize="20sp"
+	        android:text="15101145180"
+	        android:singleLine="true"
+	        android:gravity="left|center"/>
+	</LinearLayout>
+	<ImageView 
+	    android:layout_gravity="bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_marginLeft="30dp"
+	    android:background="#1375D8"/>
+</FrameLayout>

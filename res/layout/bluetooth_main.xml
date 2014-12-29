@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/background" >
+	<LinearLayout
+	    android:id="@+id/main_content_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1" 
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp">
+	        <LinearLayout
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:orientation="horizontal" >
+		        <ImageView
+		            android:id="@+id/bluetooth_flag"
+	       	        android:layout_height="match_parent"
+		        	android:layout_width="wrap_content"
+			        android:src="@null" />
+		        <TextView
+		            android:id="@+id/bluetooth_device_name"
+		            android:layout_marginLeft="10dp"
+	       	        android:layout_height="match_parent"
+		        	android:layout_width="wrap_content"
+		        	android:textColor="#7FB8EE"
+		        	android:textSize="25sp" />
+	        </LinearLayout>
+		    <TextView
+		        android:layout_height="match_parent"
+		        android:layout_width="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:gravity="center"
+		        android:text="蓝牙电话"
+		        android:textColor="#7FB8EE"
+		        android:textSize="30sp" />
+		    
+		    <ImageButton
+		        android:id="@+id/contacts_clear"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp"
+		        android:background="@drawable/btn_clear" />
+		</RelativeLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="7"
+	        android:orientation="horizontal" >
+	
+	        <LinearLayout 
+	            android:layout_weight="1"
+	            android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:background="@drawable/sidebarbk"
+	            android:paddingLeft="40dp"
+	            android:paddingRight="40dp"
+		        android:orientation="vertical" >
+		        <Button
+		            android:id="@+id/siderbar_key"
+		            android:layout_width="wrap_content"
+		            android:layout_height="0dp"
+		            android:layout_weight="1"
+		            android:layout_marginTop="60dp"
+		            android:layout_marginBottom="60dp"
+		            android:background="@drawable/sider_key_up" />
+		        <Button
+		            android:id="@+id/siderbar_calllog"
+		            android:layout_width="wrap_content"
+		            android:layout_height="0dp"
+		            android:layout_weight="1"
+		            android:background="@drawable/sider_callog_up" />
+		        <Button
+		            android:id="@+id/siderbar_contacts"
+		            android:layout_width="wrap_content"
+		            android:layout_height="0dp"
+		            android:layout_weight="1"
+		            android:layout_marginTop="60dp"
+		            android:layout_marginBottom="60dp"
+		            android:background="@drawable/sider_contacts_up" />
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:id="@+id/context"
+	            android:layout_weight="5"
+	            android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:orientation="horizontal" />
+	    </LinearLayout>
+	</LinearLayout>
+</FrameLayout>

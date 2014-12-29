@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bluetoothcaller.Activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <application
+        android:name="com.example.bluetoothcaller.Activity.BtApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.example.bluetoothcaller.Activity.IncomingAcitivity"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask" >
+
+        </activity>
+        <activity
+            android:name="com.example.bluetoothcaller.Activity.OutgoingActivity"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.example.bluetoothcaller.Activity.OutgoingFinishActivity"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity 
+            android:name="com.example.bluetoothcaller.Activity.MainActivity"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.example.bluetoothcaller.Activity.CallActivity"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask" >
+
+        </activity>
+        <service 
+            android:name="com.example.bluetoothcaller.Service.BluetoothLeService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="@string/bluetooth_caller_service" />
+            </intent-filter>
+        </service>
+        
+       <receiver android:name="com.example.bluetoothcaller.Activity.BtReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter >
+		        <action android:name="android.intent.action.MEDIA_MOUNTED" />
+		        <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+		        <data android:scheme="file" />
+    		</intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

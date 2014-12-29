@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BluetoothCaller</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bluetooth_caller_service">Bluetooth_Caller_Service</string>
+    
+    <string name="bluetooth_outgoing_call">正在呼叫</string>
+    <string name="connect_device">请先连接您的蓝牙设备</string>
+    <string name="device_name">设备名称:</string>
+    <string name="first_time">第一次使用如有问题请:</string>
+    <string name="click_here">点击这里</string>
+    <string name="unknown_text_I">请先在“手机设置”中打开蓝牙，\n搜索设备名称</string>
+	<string name="unknown_text_II">,\n连接并进行配对</string>
+	<string name="know">知道了</string>
+	<string name="confirm_msg">确认信息</string>
+	<string name="progressing">正在同步联系人，请稍侯</string>
+	<string name="progressingcalllog">正在同步通话记录，请稍侯</string>
+	<string name="end_up_outgoing">通话结束</string>
+	<string name="del_calllog">是否移除本条通话记录</string>
+	<string name="del_contacts">是否移除本条联系人</string>
+	<string name="del_all_calllog">是否移除所有通话记录</string>
+	<string name="del_all_contacts">是否移除所有联系人</string>
+	<string name="calllog_sum">通话记录导入成功，</string>
+	<string name="contacts_sum">联系人导入成功，</string>
+	<string name="confirm">确定</string>
+	<string name="cancel">取消</string>
+</resources>

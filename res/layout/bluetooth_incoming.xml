@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="蓝牙电话"
+        android:textColor="#7FB8EE"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_weight="1" 
+            android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center" >
+	        <ImageView
+	            android:id="@+id/icon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="60dp"
+	            android:layout_marginRight="60dp"
+	            android:background="@drawable/icon_circle"
+	            android:contentDescription="@string/hello_world"
+	            android:padding="40dp"
+	            android:src="@drawable/icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="Incoming call"
+                android:textColor="#1375D8"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center|left"
+                android:layout_weight="2"
+                android:text=""
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp" />
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:singleLine="true"
+                android:gravity="center|left"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="35sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <Button
+            android:id="@+id/hang_up_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:background="@drawable/btn_hang_up" />
+        <Button
+            android:id="@+id/answer_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:background="@drawable/btn_answer" />
+    </LinearLayout>
+</LinearLayout>

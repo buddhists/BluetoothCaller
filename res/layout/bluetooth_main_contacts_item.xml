@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="60dp"
+    android:layout_height="match_parent" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="30dp"
+	    android:orientation="horizontal"
+	    android:background="@drawable/btn_item_click" >
+	    <TextView
+	        android:id="@+id/contacts_item_name"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:layout_height="match_parent"
+	        android:text="阿里郎"
+	        android:textSize="23sp"
+	        android:singleLine="true"
+	        android:gravity="center|left"/>
+	    <TextView
+	        android:id="@+id/contacts_item_number"
+	        android:layout_width="0dp"
+	        android:layout_weight="4"
+	        android:layout_height="match_parent"
+	        android:textSize="25sp"
+	        android:text="15101145180"
+	        android:singleLine="true"
+	        android:gravity="center|left"/>
+	</LinearLayout>
+	<ImageView 
+	    android:layout_gravity="bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_marginLeft="30dp"
+	    android:background="#1375D8"/>
+</FrameLayout>
